@@ -8,11 +8,12 @@ import profileImage from '../Images/photo.jpeg'
 const NavBar = () => {
     return (
         <Box>
-            <AppBar position="static" elevation={1}
+            <AppBar position="sticky" elevation={0}
                 sx={{
                     backgroundColor: '#fff',
                     width: '100%',
                     color: "#2E2E2E",
+                    marginBottom:'1.5rem'
                 }}>
                 <Toolbar sx={{
                     margin: { xs: '0px 0px 0px 0px', sm: '0px 0px 0px 0px', md: '0px 20px 0px 20px', lg: '0px 40px 0px 40px', xl: '0px 40px 0px 40px' },

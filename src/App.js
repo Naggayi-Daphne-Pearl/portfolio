@@ -7,6 +7,7 @@ import HomePage from './Pages/HomePage'
 import Projects from './Pages/Projects'
 import About from './Pages/About'
 import NavBar from './Components/NavBar/NavBar'
+import Footer from './Components/Footer'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/projects" element={<Projects />} />
         <Route exact path="/about" element={<About />} />
       </Routes>
-
+      <Footer/>
     </div>
   );
 }
