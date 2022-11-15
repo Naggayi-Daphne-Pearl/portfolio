@@ -76,7 +76,11 @@ const buttonStyle = {
   boxShadow: 'var(--shadow-1)',
   transition: 'var(--transition)',
   textTransform: 'capitalize',
-  display: 'inline-block'
+  display: 'inline-block', 
+  marginTop:'2rem', 
+  alignItems:'center', 
+  fontWeight:'bolder'
+  
 }
 
 
