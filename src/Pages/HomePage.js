@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
       <CssBaseline />
       <Container maxWidth="70%" sx={{ bgcolor: 'var(--white)' }}>
-        <Box sx={{ bgcolor: 'var(--backgroundColor)', height: '80vh' }}>
+        <Box sx={{ bgcolor: 'var(--backgroundColor)', height: '100vh' }}>
           <Grid container spacing={3}>
             <Grid item xs={2}>
               <List style={{
@@ -21,40 +21,52 @@ const HomePage = () => {
                 justifyContent: 'center',
               }}>
                 <ListItemButton href="https://github.com/Naggayi-Daphne-Pearl">
-                  <ListItemIcon><GitHub /></ListItemIcon>
+                  <ListItemIcon style={iconStyle}><GitHub /></ListItemIcon>
                 </ListItemButton>
 
                 <ListItemButton href="https://twitter.com/naggayi_pearl">
-                  <ListItemIcon><Twitter /></ListItemIcon>
+                  <ListItemIcon style={iconStyle}><Twitter /></ListItemIcon>
                 </ListItemButton>
 
                 <ListItemButton href="https://www.linkedin.com/in/daphne-naggayi-68070b185/">
-                  <ListItemIcon><LinkedIn /></ListItemIcon>
+                  <ListItemIcon style={iconStyle}><LinkedIn /></ListItemIcon>
                 </ListItemButton>
 
                 <ListItemButton href="https://mail.google.com/mail/u/0/#inbox">
-                  <ListItemIcon><Email /></ListItemIcon>
+                  <ListItemIcon style={iconStyle}><Email /></ListItemIcon>
                 </ListItemButton>
               </List>
             </Grid>
             <Grid item xs={10}
-              style={{
-                maxWidth: '45em',
-                margin: '6rem 6rem',
+              sx={{
+                maxWidth: '35em',
+                margin: '6rem auto',
                 alignItems: 'center',
                 justifyContent: 'center'
 
               }}>
-              <div>
-                <Typography variant='h3' align="center">HEY, I AM DAPHNE NAGGAYI</Typography>
-                <Typography variant='p'
-                  sx={{ alignItems: 'center', marginTop: '1rem' }}>
+              <Grid
+                sx={{
+                  margin: '0% 10%',
+
+                }}>
+                <Typography variant='h4'>Hello there! My name is Daphne Naggayi <br style={{ marginLeft: '1rem' }} /> and I'm a front end developer</Typography>
+
+              </Grid>
+              {/* <Grid sx={{
+                margin: '3% 10%',
+                color: 'var(--primary-700)',
+                maxWidth: '50%'
+
+              }}>
+                <Typography align='center' variant='h5'>
                   A front end focused web developer that is also still learning backend with the hope of being a full stack developer
                 </Typography>
-              </div>
 
-              <Link to="/projects" style={{ textDecoration: "none" }}>
-                <Button variant="contained" style={buttonStyle}>Projects</Button>
+              </Grid> */}
+
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <Button variant="contained" style={buttonStyle}>ABOUT </Button>
               </Link>
             </Grid>
 
@@ -71,16 +83,21 @@ const buttonStyle = {
   background: 'var(--primary-500)',
   border: 'transparent',
   borderRadius: 'var(--borderRadius)',
-  letterSpacing: 'var(--letterSpacing)',
-  padding: '0.375rem 0.75rem',
+  padding: '0.5rem 2rem',
   boxShadow: 'var(--shadow-1)',
   transition: 'var(--transition)',
   textTransform: 'capitalize',
-  display: 'inline-block', 
-  marginTop:'2rem', 
-  alignItems:'center', 
-  fontWeight:'bolder'
-  
+  display: 'inline-block',
+  marginTop: '1rem',
+  alignItems: 'center',
+  fontWeight: 'bolder',
+  marginLeft: '23%',
+  fontSize: '1rem',
+
+}
+
+const iconStyle = {
+  color: 'var(--primary-700)',
 }
 
 
