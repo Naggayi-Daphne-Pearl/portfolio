@@ -13,21 +13,22 @@ const NavBar = () => {
                     backgroundColor: '#fff',
                     width: '100%',
                     color: "#2E2E2E",
-                    marginBottom:'1.5rem'
+                    marginBottom: '1.5rem'
                 }}>
                 <Toolbar sx={{
-                    margin: { xs: '0px 0px 0px 0px', sm: '0px 0px 0px 0px', md: '0px 20px 0px 20px', lg: '0px 40px 0px 40px', xl: '0px 40px 0px 40px' },
+                    margin: { xs: '0px 0px 0px 0px', sm: '0px 0px 0px 0px', md: '0px 20px 0px 20px', lg: '0px 40px 0px 40px', xl: '50px 40px 50px 40px' },
                     display: 'flex',
                     alignContent: 'center',
                     justifyContent: 'center',
                 }}>
                     <Grid container spacing={12} style={{
                         display: 'flex',
+                        maxWidth:'98%'
                     }}>
                         <Grid item xs={8} lg={4}
                             style={{
                                 display: 'flex',
-                                justifyContent: 'center',
+                                justifyContent: 'flex-start',
                                 alignItems: 'center',
                             }}>
                             <img src={profileImage} alt='#' style={{
@@ -36,9 +37,17 @@ const NavBar = () => {
                                 width: '2rem',
                                 height: '2rem',
                                 borderRadius: '1.5rem',
-                                mr:4,
+                                mr: 4,
                             }} />
-                            <Typography variant='h5' sx={{ ml: 1, fontSize: { xs: '1.2rem', lg: '1.25rem' } }}>Naggayi Daphne Pearl</Typography>
+                            <Typography variant='h5'
+                                sx={{
+                                    ml: 1,
+                                    fontSize: { xs: '1.3rem', lg: '1.563rem' },
+                                    fontFamily:'italics', 
+                                    fontWeight:'bold'
+                                    
+
+                                }}>Daphne</Typography>
                         </Grid>
                         <Grid item lg={8} style={{
                             display: 'flex',
