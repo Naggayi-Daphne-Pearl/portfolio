@@ -1,8 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Container, Box, Grid } from '@mui/material';
 
 const About = () => {
   return (
-    <div>About</div>
+    <Container maxWidth="70%" sx={{ bgcolor: 'var(--white)' }}>
+      <Box>
+        <Grid container spacing={2}>
+          <Grid></Grid>
+          <Grid></Grid>
+
+        </Grid>
+
+      </Box>
+    </Container>
   )
 }
 

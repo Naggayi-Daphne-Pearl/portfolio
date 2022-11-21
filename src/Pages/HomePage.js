@@ -88,10 +88,10 @@ const buttonStyle = {
   transition: 'var(--transition)',
   textTransform: 'capitalize',
   display: 'inline-block',
-  marginTop: '1rem',
+  marginTop: '5rem',
   alignItems: 'center',
   fontWeight: 'bolder',
-  marginLeft: '23%',
+  marginLeft: '28%',
   fontSize: '1rem',
 
 }
