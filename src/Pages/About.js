@@ -31,7 +31,7 @@ const About = () => {
         bgcolor: 'var(--backgroundColor)',
         color: 'var(--textColor)',
         maxWidth: '100%',
-        margin: '7% auto'
+        margin: {lg:'7% auto', xs:'15% auto'}
       }}>
         <Grid sx={{
           maxWidth: '40em',
