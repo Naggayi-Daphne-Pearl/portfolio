@@ -16,7 +16,7 @@ const HomePage = () => {
                 backgroundColor: '#fff',
                 width: '4rem',
                 color: "#2E2E2E",
-                margin: '6rem 0',
+                margin: '10rem 0',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
@@ -39,8 +39,7 @@ const HomePage = () => {
             </Grid>
             <Grid item xs={10}
               sx={{
-                maxWidth: '35em',
-                margin: '6rem auto',
+                margin: {lg:'15% auto', xs:'30% auto'},
                 alignItems: 'center',
                 justifyContent: 'center'
 
@@ -48,9 +47,13 @@ const HomePage = () => {
               <Grid
                 sx={{
                   margin: '0% 10%',
+                  maxWidth: '60%',
+
 
                 }}>
-                <Typography variant='h4'>Hello there! My name is Daphne Naggayi <br style={{ marginLeft: '1rem' }} /> and I'm a front end developer</Typography>
+                <Typography variant='h4'>Hello,I am Daphne Naggayi Pearl</Typography>
+                <Typography variant='body1' sx={{marginTop:'5%'}}>A front-end based developer also learning backend in the hopes of becoming a backend developer</Typography>
+
 
               </Grid>
               {/* <Grid sx={{
@@ -91,7 +94,7 @@ const buttonStyle = {
   marginTop: '5rem',
   alignItems: 'center',
   fontWeight: 'bolder',
-  marginLeft: '28%',
+  marginLeft: '25%',
   fontSize: '1rem',
 
 }

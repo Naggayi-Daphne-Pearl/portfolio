@@ -31,11 +31,11 @@ const About = () => {
         bgcolor: 'var(--backgroundColor)',
         color: 'var(--textColor)',
         maxWidth: '100%',
-        margin: '1.5rem auto'
+        margin: '7% auto'
       }}>
         <Grid sx={{
           maxWidth: '40em',
-          margin: '2rem auto'
+          margin: '1rem auto'
         }}>
           <Typography variant='h5' align='center'  sx={{marginBottom:'5%'}}>About me </Typography>
           <Typography variant='body2' align='center'>My name is Naggayi Daphne Pearl. <br />  I am a junior software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success. I am well-versed in technology and writing code to create systems that are reliable and user-friendly.
